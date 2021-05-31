@@ -3,9 +3,99 @@
 
 }
 html {
-	background: linear-gradient(280deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+	background: #2b86c5
+}
+
+/* Header Styling */
+nav {
+    display: flex;
+   justify-content:space-between;
+   padding: 10px;
+}
+
+/* Page-1 Stying */
+
+.page-1 h2 {
+	font-size: 20px;
+	font-weight: bolder;
+	color:rgb(138, 44, 226);
+	margin-bottom: 10px;
+}
+
+.info-list {
+	font-size: 15px;
+	font-weight: bolder;
+	color:rgb(138, 44, 226);
+	margin-bottom: 5px;
+}
+
+/* Start Button Styling */
+
+#start-button {
+	justify-content: top;
+	margin-top: 25px;
+	margin-left: 30px;
+}
+
+.pulse-button {
+	position: relative;
+	top: 20%;
+	left: 00%;
+	margin-left: -50px;
+	margin-top: -50px;
+	display: inline-block;
+	width: 320px;
+	height: 40px;
+	font-size: 1.3em;
+	font-weight: light;
+	font-family: 'Trebuchet MS', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 40px;
+	letter-spacing: 0px;
+	color: white;
+	border: none;
+	border-radius: 0%;
+	background: #65378f;
+	cursor: pointer;
+	box-shadow: 0 0 0 0 rgba(#65378f, 0.25);
+	-webkit-animation: pulse 1.7s infinite;
+}
+
+.pulse-button:hover {
+	-webkit-animation: none;
+}
+
+@-webkit-keyframes pulse {
+
+  0% {
+    @include transform(scale(.95));
+  }
+  70% {
+    @include transform(scale(1));
+    box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+  }
+  100% {
+    @include transform(scale(.95));
+    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
+}
+
+/* Game Box Styling */
+.page-1, .info_box, .log, .finale, .quiz_box {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+    color: hsl(206, 17%, 28%);
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 30px 40px;
+    height: 500px;
+    text-align: center;
 
 }
+
 
 @media screen and (max-width: 480px){
     html {
@@ -14,4 +104,5 @@ html {
     nav {
         width: auto;
     }
+   
 }
