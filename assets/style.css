@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+
+}
+html {
+	background: linear-gradient(280deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+
+}
+
+@media screen and (max-width: 480px){
+    html {
+        width: auto;
+    }
+    nav {
+        width: auto;
+    }
+}
